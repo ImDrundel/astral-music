@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Leftbar from "./moduls/leftbar/leftbar";
 import Rightbar from "./moduls/rightbar/rightbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["600"] });
 
 export const metadata: Metadata = {
   title: "Astral music",
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <body>
         <div className="mainGridContainer">
           <Leftbar />

@@ -1,0 +1,15 @@
+@import "reset.scss";
+
+.mainGridContainer {
+  display: grid;
+  grid-template-areas: "leftbar children rightbar";
+  grid-template-columns: 226px 1fr 374px;
+  grid-auto-rows: 100vh;
+}
+
+.children {
+  grid-area: children;
+  background-color: #171a1f;
+  color: white;
+  border: white 1px solid;
+}
